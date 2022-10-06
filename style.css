@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* ### Primary */
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    /* ### Neutral */
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+/* main page css */
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: #e6eff6;
+}
+
+.card-outer {
+    margin: 0 auto;
+    width: 59%;
+    border: 1px solid var(--Light-Gray);
+    border-radius: 10px;
+}
+
+h1{
+    color: var(--Cyan);
+    font-weight: 700;
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.card-text{
+    font-size: 20px;
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+
+}
+
+.card-top{
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 30px;
+
+}
+
+
+p{
+    color: var(--Grayish-Blue); 
+}
+
+.card-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 0 0 10px 10px;
+    
+
+}
+
+
+
+.card-left{
+    background-color: #2bb3b1;
+    padding: 40px 30px;
+    border-radius: 0 0 0 10px;
+
+}
+
+.card-left p, .card-right p{
+    
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.card-right{
+    background-color: #4abebd;
+    padding: 40px 30px;
+    border-radius: 0 0 10px 0;
+    color: #fff;
+
+}
+
+.dollartext{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.dollartext span{
+    font-size: 34px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.daytext{
+    margin:0 0 35px 0;
+    color: #fff;
+
+}
+
+p.expert {
+    font-size: 14px;
+    font-weight: 400;
+    width: 182px;
+}
+
+a{
+    text-align: center;
+    display: block;
+    background-color: var(--Bright-Yellow);
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .card-bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 0 0 10px 10px;
+    }
+    .card-left {
+        background-color: #2bb3b1;
+        padding: 40px 30px;
+        border-radius: 0 ;
+    }
+    .card-outer {
+        margin: 0 auto;
+        width: 100%;
+        border: 1px solid var(--Light-Gray);
+        border-radius: 10px;
+    }
+  }
+  
+  /* mobile view */
+  @media only screen and (max-width: 375px) {
+    h1 {
+        /* color: var(--Cyan); */
+        /* font-weight: 700; */
+        font-size: 24px;
+        margin:10px 0 15px 0;
+    }
+    .card-text {
+        font-size: 16px;
+    }
+    .card-top {
+        /* background-color: #fff; */
+        /* border-radius: 10px 10px 0 0; */
+        padding: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .card-outer {
+        margin: 0 auto;
+        width: 100%;
+        border: 1px solid var(--Light-Gray);
+        border-radius: 10px;
+    }
+    .card-left {
+        background-color: #2bb3b1;
+        padding: 30px 20px;
+        border-radius: 0;
+    }
+    .card-left p, .card-right p {
+        /* color: #fff; */
+        font-size: 16px;
+        /* font-weight: 700; */
+    }
+    .dollartext span {
+        font-size: 26px;
+        color: #fff;
+        font-weight: 700;
+    }
+    .daytext {
+        font-size: 14px;
+        margin: 0 0 25px 0;
+    }
+
+    p.expert {
+        font-size: 13px;
+        font-weight: 400;
+        width: 182px;
+    }
+    .card-right {
+        /* background-color: #4abebd; */
+        padding: 30px 20px;
+        /* border-radius: 0 0 10px 0; */
+        /* color: #fff; */
+    }
+
+    a {
+      
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 14px;
+    }
+  }
